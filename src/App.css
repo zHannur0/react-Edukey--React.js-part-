@@ -1,38 +1,68 @@
-.App {
+.firstContainer{
+  position: relative;
+  height: 100vh;
+  background-image:url("https://thumbs.dfs.ivi.ru/storage3/contents/7/1/6d4729dab99d2520653849f6a22e20.jpg/858x483/?q=85");
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
+p{
+  margin-block: 0;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 4%;
+  color:white;
+}
+
+h1{
+  margin-block: 0;
+}
+
+.welcomeTextContainer{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom:10%;
+  color:white;
+  width: 100%;
+}
+
+.welcomeText{
+  width: 80vw;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+}
+
+.secondContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 5% 35%;
+  background-color:black;
+  color:white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secondContainer h1{
+  margin-bottom: 3%;
+  font-family: 'Instrument Serif', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secondContainer p{
+  margin-bottom: 2%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.watchButton {
+  padding: 2% 3%;
+  background-color:#EF7E00;
+  border-radius: 10%;
+  color:white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
