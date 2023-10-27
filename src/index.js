@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
 import App from './App';
-
+import Contact from "./pages/Contact";
+import Movies from "./pages/Movies";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element = {<App/>} />
+      <Route path = "/contact" element = {<Contact/>}/>
+      <Route path = "/movies" element = {<Movies/>}/>
+      <Route path = "/signIn" element = {<SignIn/>}/>
+      <Route path = "/signUp" element = {<SignUp/>}/>
+    </Routes>
+    </BrowserRouter>
+    
   </React.StrictMode>
 );
 
